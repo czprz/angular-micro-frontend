@@ -1,0 +1,35 @@
+<button
+  pButton
+  type="button"
+  label="John Doe"
+  icon="pi pi-user"
+  class="p-button-text p-button-rounded"
+></button>
+
+<button
+  pButton
+  type="button"
+  icon="pi pi-cog"
+  class="p-button-rounded p-button-text"
+  (click)="op.toggle($event)"
+></button>
+
+<p-overlayPanel #op styleClass="theme-menu">
+  <p-button
+    label="Light"
+    class="p-element"
+    styleClass="p-button-text light"
+    (click)="changeTheme('light-theme')"
+  >
+    <span class="color-circle"></span>
+  </p-button>
+
+  <p-button
+    label="Dark"
+    class="p-element"
+    styleClass="p-button-text dark"
+    (click)="changeTheme('dark-theme')"
+  >
+    <span class="color-circle"></span>
+  </p-button>
+</p-overlayPanel>

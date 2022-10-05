@@ -1,0 +1,46 @@
+:host {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: var(--surface-overlay);
+  transition: transform .4s cubic-bezier(.05,.74,.2,.99);
+  user-select: none;
+
+  .logo {
+    width: 180px;
+    height: 80px;
+    color: black;
+    background-image: var(--sgre-icon);
+    background-size: 180px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  .search {
+    padding: 1rem 2rem 2rem;
+
+    input {
+      width: 180px;
+    }
+  }
+
+  .menu {
+    padding: 0 2rem 2rem;
+
+    .category {
+      font-weight: 700;
+      padding: .5rem .25rem;
+    }
+
+    .items {
+      button {
+        width: 100%;
+        text-align: left;
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--surface-ground);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.theme-menu {
+  line-height: 25px;
+
+  span.color-circle {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+  }
+
+  .dark > span.color-circle {
+    background-color: #1c1b22;
+    border: 1px solid #c298d8;
+  }
+
+  .light > span.color-circle {
+    background-color: #FFF;
+    border: 1px solid #2a323d;
+  }
+
+  p-button {
+    display: block;
+  }
+}
