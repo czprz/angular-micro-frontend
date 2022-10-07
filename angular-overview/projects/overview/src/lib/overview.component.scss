@@ -1,0 +1,37 @@
+:host {
+  display: block;
+  padding: 10px 20px;
+
+  .container {
+    padding: 10px 30px;
+  }
+
+  h2 {
+    padding: 0 15px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "wind-directions wind-speeds wind-gusts power-production-now";
+    justify-items: stretch;
+    gap: 20px;
+
+    .wind-directions {
+      grid-area: wind-directions;
+    }
+
+    .wind-speeds {
+      grid-area: wind-speeds;
+    }
+
+    .wind-gusts {
+      grid-area: wind-gusts;
+    }
+
+    .power-production-now {
+      grid-area: power-production-now;
+    }
+  }
+}

@@ -12,11 +12,15 @@
     width: 180px;
     height: 80px;
     color: black;
+    display: block;
     background-image: var(--sgre-icon);
     background-size: 180px 200px;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
   }
 
   .search {

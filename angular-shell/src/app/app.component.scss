@@ -1,2 +1,24 @@
 :host {
+    display: grid;
+    max-width: 100%;
+    position: relative;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 80px auto;
+    grid-template-areas: "menu toolbar" "menu content" "menu footer";
+
+  > app-toolbar {
+    grid-area: toolbar;
+  }
+
+    > app-menu {
+        grid-area: menu;
+    }
+
+    > content {
+        grid-area: content;
+    }
+
+    > app-footer {
+        grid-area: footer;
+    }
 }

@@ -22,11 +22,12 @@ export class BrokerService {
       .subscribe(() => {
         if (subject.closed) {
           end.next();
+          end.complete();
           return;
         }
 
         const latestValue = this.repository.get(key) as unknown as T;
-        if (latestValue === lastValue) {
+        if (latestValue === lastValue || latestValue == null) {
           return;
         }
 

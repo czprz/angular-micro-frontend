@@ -37,7 +37,7 @@ export class ConfigFacadeService {
   }
 
   getTheme(): string | null {
-    return this.configRepository.get('theme');
+    return this.configRepository.get('theme') ?? 'light-theme';
   }
 
   setTheme(theme: string): void {

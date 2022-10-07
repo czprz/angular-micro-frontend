@@ -2,7 +2,6 @@ import { Inject, Injectable } from "@angular/core";
 import { BrokerService } from "@czprz/broker";
 import { ConfigFacadeService } from "./config/config-facade.service";
 import { DOCUMENT } from "@angular/common";
-import {interval} from "rxjs";
 
 @Injectable({
   providedIn: "root",
@@ -21,7 +20,6 @@ export class ThemeService {
     this.changeTheme(theme);
 
     this.broker.get<string>("theme").subscribe((theme) => {
-      console.log('shell', theme);
       this.changeTheme(theme);
       this.configFacade.setTheme(theme);
     });
