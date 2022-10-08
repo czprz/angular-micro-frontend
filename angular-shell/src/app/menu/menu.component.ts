@@ -15,7 +15,7 @@ export class MenuComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     const m = await loadRemoteModule({
       type: "module",
-      remoteEntry: "http://localhost:4201/remoteEntry.js",
+      remoteEntry: "http://localhost/getModule/menu/remoteEntry.js",
       exposedModule: "./Component",
     });
 

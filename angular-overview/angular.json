@@ -55,7 +55,8 @@
 								}
 							],
 							"outputHashing": "all",
-							"extraWebpackConfig": "webpack.prod.config.js"
+              "baseHref": "/getModule/overview/",
+              "extraWebpackConfig": "webpack.prod.config.js"
 						},
 						"development": {
 							"buildOptimizer": false,

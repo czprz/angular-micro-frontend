@@ -14,7 +14,7 @@ export class ToolbarComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     const m = await loadRemoteModule({
       type: 'module',
-      remoteEntry: 'http://localhost:4202/remoteEntry.js',
+      remoteEntry: 'http://localhost/getModule/toolbar/remoteEntry.js',
       exposedModule: './Component'
     });
 

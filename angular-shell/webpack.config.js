@@ -5,7 +5,7 @@ const {
 
 module.exports = withModuleFederationPlugin({
   remotes: {
-    overview: "http://localhost:4203/remoteEntry.js",
+    overview: "http://localhost/getModule/overview/remoteEntry.js",
   },
 
   shared: {
