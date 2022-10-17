@@ -2,21 +2,26 @@ version: "3.9"
 services:
   shell:
     image: "shell:latest"
+    build: ./angular-shell
     ports:
       - "4200:80"
   overview:
     image: "overview:latest"
+    build: ./angular-overview
     ports:
       - "4203:80"
   toolbar:
     image: "toolbar:latest"
+    build: ./angular-toolbar
     ports:
       - "4202:80"
   menu:
     image: "menu:latest"
+    build: ./angular-menu
     ports:
       - "4201:80"
   proxy:
     image: "proxy:latest"
+    build: ./proxy
     ports:
       - "80:80"
