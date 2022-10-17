@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  shell:
+    image: "shell:latest"
+    ports:
+      - "4200:80"
+  overview:
+    image: "overview:latest"
+    ports:
+      - "4203:80"
+  toolbar:
+    image: "toolbar:latest"
+    ports:
+      - "4202:80"
+  menu:
+    image: "menu:latest"
+    ports:
+      - "4201:80"
+  proxy:
+    image: "proxy:latest"
+    ports:
+      - "80:80"

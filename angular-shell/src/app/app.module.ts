@@ -10,10 +10,11 @@ import { BrokerModule } from "@czprz/broker";
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FooterComponent } from './footer/footer.component';
 import {CardModule} from "primeng/card";
+import {ChartModule} from "primeng/chart";
 
 @NgModule({
   declarations: [AppComponent, ToolbarComponent, MenuComponent, WelcomeComponent, FooterComponent],
-    imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, BrokerModule, CardModule],
+    imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, BrokerModule, CardModule, ChartModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

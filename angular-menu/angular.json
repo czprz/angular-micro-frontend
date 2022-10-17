@@ -72,7 +72,6 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/getModule/menu/",
               "extraWebpackConfig": "webpack.prod.config.js"
             },
             "development": {

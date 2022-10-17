@@ -55,7 +55,6 @@
 								}
 							],
 							"outputHashing": "all",
-              "baseHref": "/getModule/overview/",
               "extraWebpackConfig": "webpack.prod.config.js"
 						},
 						"development": {
@@ -74,15 +73,16 @@
 					"configurations": {
 						"production": {
 							"browserTarget": "angular-overview:build:production",
-							"extraWebpackConfig": "webpack.prod.config.js"
-						},
+							"extraWebpackConfig": "webpack.prod.config.js",
+              "baseHref": "/getModule/overview/"
+            },
 						"development": {
 							"browserTarget": "angular-overview:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
 					"options": {
-						"port": 4201,
+						"port": 4203,
 						"publicHost": "http://localhost:4203",
 						"extraWebpackConfig": "webpack.config.js"
 					}

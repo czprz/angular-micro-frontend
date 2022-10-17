@@ -1,15 +1,18 @@
-const { shareAll, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
+const {
+  withModuleFederationPlugin,
+} = require("@angular-architects/module-federation/webpack");
 
 module.exports = withModuleFederationPlugin({
-
-  name: 'overview',
+  name: "overview",
 
   exposes: {
-    './Module': './projects/overview/src/lib/overview.module.ts',
+    "./Module": "./projects/overview/src/lib/overview.module.ts",
   },
 
   shared: {
-    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    "@angular/core": { singleton: true, strictVersion: true },
+    "@angular/common": { singleton: true, strictVersion: true },
+    "@angular/router": { singleton: true, strictVersion: true },
+    "@chart.js/chart.js": { singleton: true, strictVersion: true },
   },
-
 });
